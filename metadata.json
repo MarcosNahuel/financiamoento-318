@@ -1,0 +1,5 @@
+{
+  "name": "Mendoza Education Funding Dashboard",
+  "description": "A professional and interactive dashboard that visualizes the national education funding for Mendoza in 2025. It features a treemap for relative contribution and a bar chart for detailed comparison.",
+  "requestFramePermissions": []
+}
