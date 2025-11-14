@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, LabelList } from 'recharts';
 import type { FinancingData } from '../types';
@@ -15,7 +16,7 @@ const formatNumber = (num: number) => {
   }).format(num);
 };
 
-const CustomTooltip = ({ active, payload, label }: any) => {
+const CustomTooltip = ({ active, payload }: any) => {
   if (active && payload && payload.length) {
     const dataItem = payload[0].payload;
     return (

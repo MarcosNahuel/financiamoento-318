@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { ResponsiveContainer, Treemap, Tooltip } from 'recharts';
 import type { FinancingData } from '../types';
@@ -79,7 +80,7 @@ const TreemapChart: React.FC<TreemapChartProps> = ({ data, selectedYear }) => {
         <Treemap
           data={data}
           dataKey="monto_millones"
-          ratio={4 / 3}
+          aspectRatio={4 / 3}
           stroke="#fff"
           fill="#8884d8"
           isAnimationActive={false} // Animation can sometimes cause issues with custom content

@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { ResponsiveContainer, PieChart, Pie, Cell, Tooltip, Legend } from 'recharts';
 import type { FundingDistribution } from '../types';
@@ -18,7 +19,6 @@ const formatNumber = (num: number) => {
 const CustomTooltip = ({ active, payload }: any) => {
   if (active && payload && payload.length) {
     const data = payload[0].payload;
-    const total = payload[0].payload.value / (payload[0].percent / 100);
     return (
       <div className="bg-slate-900/80 backdrop-blur-sm border border-slate-600 p-3 rounded-md shadow-lg text-sm">
         <p className="font-bold" style={{ color: data.color }}>{data.name}</p>
